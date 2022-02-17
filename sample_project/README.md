@@ -1,3 +1,7 @@
+# Flink notes
+
+after running `dbt run` topic name needs to be updated in the Flink application
+
 # Taking off with Materialize, Redpanda and dbt
 
 This is a sample project with enough plumbing to spin up an end-to-end analytics pipeline using Materialize, Redpanda and dbt to explore real-time data.
