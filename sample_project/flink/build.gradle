@@ -1,0 +1,25 @@
+plugins {
+    id 'scala'
+
+    id 'application'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.scala-lang:scala-library:2.12.15"
+
+    implementation "org.apache.flink:flink-clients_2.12:1.13.3"
+    implementation "org.apache.flink:flink-java:1.13.3"
+    implementation "org.apache.flink:flink-streaming-java_2.12:1.13.3"
+    implementation "org.apache.flink:flink-streaming-scala_2.12:1.13.3"
+    implementation "org.apache.flink:flink-connector-kafka_2.12:1.13.3"
+
+    implementation group: 'org.apache.httpcomponents', name: 'httpclient', version: '4.5.13'
+}
+
+application {
+    mainClass = 'org.apache.flink.flight.Application'
+}

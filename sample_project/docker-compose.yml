@@ -62,3 +62,9 @@ services:
        - materialized
     ports:
       - 3030:3000
+  flink:
+    build:
+      context: ./flink
+    container_name: flink
+    volumes:
+      - ./flink/:/app
